@@ -1,8 +1,8 @@
 package postctrl
 
 type Post struct {
-	Id       string
-	Title    string
-	Body     string
-	ImageUrl string
+	Id       string `json:"id"`
+	Title    string `json:"title"`
+	Body     string `json:"body"`
+	ImageUrl string `json:"image_url"`
 }
