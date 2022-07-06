@@ -1,4 +1,4 @@
-package database_ctrl
+package config
 
 import (
 	"os"
@@ -19,5 +19,6 @@ func Init() {
 	}
 
 	db.AutoMigrate(schemas.Post{})
+	db.AutoMigrate(schemas.User{})
 	DataBase = db
 }
